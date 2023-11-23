@@ -1,5 +1,6 @@
 package ru.netology.stats;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StatsServiceTest {
@@ -10,8 +11,10 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedSum = 180;
-        int ActualSum = service.CalcSumService(arg);
+        int Expected = 180;
+        int Actual = service.CalcSumService(arg);
+
+        Assertions.assertEquals(Expected, Actual);
     }
 
     @Test
@@ -20,9 +23,10 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedASA = 15;
-        int ActualASA = service.CalcAverageSalesAmount(arg);
+        int Expected = 15;
+        int Actual = service.CalcAverageSalesAmount(arg);
 
+        Assertions.assertEquals(Expected, Actual);
     }
 
     @Test
@@ -31,9 +35,10 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMAT = 5;
-        int ActualMAT = service.CalcMaxAverage(arg);
+        int[] Expected = {6, 8};
+        int Actual = service.CalcMaxAverage(arg);
 
+        Assertions.assertEquals(Expected, Actual);
     }
 
     @Test
@@ -42,19 +47,22 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMiAT = 7;
+        int Expected = 9;
         int Actual = service.CalcMinAverage(arg);
 
+        Assertions.assertEquals(Expected, Actual);
     }
 
-    @Test
+    /*@Test
     void CalcAverageMinMonth() {
         StatsService service = new StatsService();
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedAMM = 5;
-        int ActualAMM = service.CalcAverageMinMonth(arg);
+        int Expected = 5;
+        int Actual = service.CalcAverageMinMonth(arg);
+
+        Assertions.assertEquals(Expected, Actual);
     }
 
     @Test
@@ -65,7 +73,9 @@ public class StatsServiceTest {
 
         int Expected = 5;
         int Actual = service.CalcAverageMaxMonth(arg);
+
+        Assertions.assertEquals(Expected, Actual);
     }
 
-
+    */
 }
