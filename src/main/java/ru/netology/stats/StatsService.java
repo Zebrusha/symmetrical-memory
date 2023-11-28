@@ -49,44 +49,44 @@ public class StatsService {
         return a + 1;
     }
 
-   /* public int CalcAverageMinMonth(int[] arg) {
-        int a = 0;
+    public int CalcAverageMinMonth(int[] arg) {
+        int a = 1;
         int b = 0;
-        int i;
-        for (int c = 0; c < arg.length; c++) {
-            b++;
-        }
+        int i = 0;
+
         for (int j = 0; j < arg.length; j++) {
-            a = (a + arg[j]);
+            a += arg[j];
         }
-        a = a / b;
-        for (i = 0; i < arg.length; i++) {
-            if (a < arg[i]) {
+        a = a / arg.length;
+
+        for (int j : arg) {
+            if (a < j) {
                 i++;
             }
         }
-        System.out.println(i);
+
         return i;
     }
 
     public int CalcAverageMaxMonth(int[] arg) {
-        int a = 0;
+        int a = 1;
         int b = 0;
-        int c = 0;
-        for (int i = 0; i < arg.length; i++) {
-            b++;
-        }
+        int i = 0;
+
         for (int j = 0; j < arg.length; j++) {
-            a = (a + j) / b;
+            a += arg[j];
         }
-        for (int k = 0; k < arg.length; k++) {
-            if (a < arg[k]) {
-                c++;
+        a = a / arg.length;
+
+        for (int j : arg) {
+            if (a > j) {
+                i++;
             }
         }
-        return c;
+
+        return i;
     }
-    */
+
 }
 
 

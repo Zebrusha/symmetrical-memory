@@ -53,7 +53,7 @@ public class StatsServiceTest {
         Assertions.assertEquals(Expected, Actual);
     }
 
-    /*@Test
+    @Test
     void CalcAverageMinMonth() {
         StatsService service = new StatsService();
 
@@ -77,5 +77,5 @@ public class StatsServiceTest {
         Assertions.assertEquals(Expected, Actual);
     }
 
-    */
+
 }
