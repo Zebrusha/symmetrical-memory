@@ -6,7 +6,7 @@ public class StatsService {
         for (int j = 0; j < arg.length; j++) {
             a = a + arg[j];
         }
-        System.out.println("Сумма всех продаж:" + a);
+        
         return a;
     }
 
@@ -22,7 +22,7 @@ public class StatsService {
 
         }
         a = a / b;
-        System.out.println(a);
+       
         return a;
     }
 
@@ -33,6 +33,10 @@ public class StatsService {
                 a = i;
             }
         }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 6f1d342a85d13ebea9cdb95d45ac8ca0eb3e5685
         return a + 1;
     }
 
@@ -43,7 +47,6 @@ public class StatsService {
                 a = i;
             }
         }
-        System.out.println(a + 1);
         return a + 1;
     }
 
