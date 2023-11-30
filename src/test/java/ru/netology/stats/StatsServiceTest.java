@@ -35,11 +35,8 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-<<<<<<< HEAD
         int Expected = 8;
-=======
         int[] Expected = 8;
->>>>>>> 6f1d342a85d13ebea9cdb95d45ac8ca0eb3e5685
         int Actual = service.CalcMaxAverage(arg);
 
         Assertions.assertEquals(Expected, Actual);
