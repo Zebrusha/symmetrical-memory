@@ -33,10 +33,6 @@ public class StatsService {
                 a = i;
             }
         }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 6f1d342a85d13ebea9cdb95d45ac8ca0eb3e5685
         return a + 1;
     }
 
