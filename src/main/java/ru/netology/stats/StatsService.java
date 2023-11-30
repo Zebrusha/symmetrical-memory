@@ -31,10 +31,8 @@ public class StatsService {
         for (int i = 0; i < arg.length; i++) {
             if (arg[i] >= arg[a]) {
                 a = i;
-
             }
         }
-        System.out.println(a + 1);
         return a + 1;
     }
 
