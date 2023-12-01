@@ -12,7 +12,7 @@ public class StatsServiceTest {
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 180;
-        int Actual = service.CalcSumService(arg);
+        int Actual = service.calcSumService(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -24,7 +24,7 @@ public class StatsServiceTest {
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 15;
-        int Actual = service.CalcAverageSalesAmount(arg);
+        int Actual = service.calcAverageSalesAmount(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -35,12 +35,9 @@ public class StatsServiceTest {
 
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-<<<<<<< HEAD
         int Expected = 8;
-=======
-        int[] Expected = 8;
->>>>>>> 6f1d342a85d13ebea9cdb95d45ac8ca0eb3e5685
-        int Actual = service.CalcMaxAverage(arg);
+
+        int Actual = service.calcMaxAverage(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -52,7 +49,7 @@ public class StatsServiceTest {
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 9;
-        int Actual = service.CalcMinAverage(arg);
+        int Actual = service.calcMinAverage(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -64,7 +61,7 @@ public class StatsServiceTest {
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
-        int Actual = service.CalcAverageMinMonth(arg);
+        int Actual = service.calcAverageMinMonth(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -76,7 +73,7 @@ public class StatsServiceTest {
         int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
-        int Actual = service.CalcAverageMaxMonth(arg);
+        int Actual = service.calcAverageMaxMonth(arg);
 
         Assertions.assertEquals(Expected, Actual);
     }

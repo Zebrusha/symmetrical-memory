@@ -1,91 +1,82 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public int CalcSumService(int[] arg) {
-        int a = 0;
+    public int calcSumService(int[] arg) {
+        int sum = 0;
         for (int j = 0; j < arg.length; j++) {
-            a = a + arg[j];
+            sum = sum + arg[j];
         }
-        
-        return a;
+
+        return sum;
     }
 
-    public int CalcAverageSalesAmount(int[] arg) {
-        int a = 0;
+    public int calcAverageSalesAmount(int[] arg) {
+        int AverageSum = 0;
 
-        int b = 0;
-        for (int i = 0; i < arg.length; i++) {
-            b++;
-        }
         for (int j = 0; j < arg.length; j++) {
-            a = a + arg[j];
+            AverageSum = AverageSum + arg[j];
 
         }
-        a = a / b;
-       
-        return a;
+        AverageSum = AverageSum / arg.length;
+
+        return AverageSum;
     }
 
-    public int CalcMaxAverage(int[] arg) {
-        int a = 0;
+    public int calcMaxAverage(int[] arg) {
+        int MaxAverage = 0;
         for (int i = 0; i < arg.length; i++) {
-            if (arg[i] >= arg[a]) {
-                a = i;
+            if (arg[i] >= arg[MaxAverage]) {
+                MaxAverage = i;
             }
         }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 6f1d342a85d13ebea9cdb95d45ac8ca0eb3e5685
-        return a + 1;
+
+        return MaxAverage + 1;
     }
 
-    public int CalcMinAverage(int[] arg) {
-        int a = 0;
+    public int calcMinAverage(int[] arg) {
+        int MinAverage = 0;
         for (int i = 0; i < arg.length; i++) {
-            if (arg[i] < arg[a]) {
-                a = i;
+            if (arg[i] < arg[MinAverage]) {
+                MinAverage = i;
             }
         }
-        return a + 1;
+        return MinAverage + 1;
     }
 
-    public int CalcAverageMinMonth(int[] arg) {
-        int a = 1;
-        int b = 0;
-        int i = 0;
+    public int calcAverageMinMonth(int[] arg) {
+        int AverageSum = 1;
+        int MinMonth = 0;
 
         for (int j = 0; j < arg.length; j++) {
-            a += arg[j];
+            AverageSum += arg[j];
         }
-        a = a / arg.length;
+        AverageSum = AverageSum / arg.length;
 
         for (int j : arg) {
-            if (a < j) {
-                i++;
+            if (AverageSum < j) {
+                MinMonth++;
             }
         }
 
-        return i;
+        return MinMonth;
     }
 
-    public int CalcAverageMaxMonth(int[] arg) {
-        int a = 1;
-        int b = 0;
-        int i = 0;
+    public int calcAverageMaxMonth(int[] arg) {
+        int AverageSum = 1;
+        int MaxMonth = 0;
 
         for (int j = 0; j < arg.length; j++) {
-            a += arg[j];
+            AverageSum += arg[j];
         }
-        a = a / arg.length;
+        AverageSum = AverageSum / arg.length;
 
         for (int j : arg) {
-            if (a > j) {
-                i++;
+            if (AverageSum > j) {
+                MaxMonth++;
             }
         }
 
-        return i;
+        return MaxMonth;
     }
 
 }
