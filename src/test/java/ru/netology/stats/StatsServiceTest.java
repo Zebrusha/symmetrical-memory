@@ -39,6 +39,7 @@ public class StatsServiceTest {
 
         int Actual = service.calcMaxAverage(arg);
 
+
         Assertions.assertEquals(Expected, Actual);
     }
 

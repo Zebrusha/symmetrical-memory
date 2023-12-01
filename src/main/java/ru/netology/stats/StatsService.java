@@ -31,6 +31,7 @@ public class StatsService {
         }
 
         return MaxAverage + 1;
+
     }
 
     public int calcMinAverage(int[] arg) {
