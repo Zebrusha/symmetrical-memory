@@ -1,83 +1,83 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public int calcSumService(int[] arr) {
-        int sum = 0;
+    public int calcSumService(long[] arr) {
+        long sum = 0;
         for (int j = 0; j < arr.length; j++) {
             sum = sum + arr[j];
         }
 
-        return sum;
+        return (int) sum;
     }
 
-    public int calcAverageSalesAmount(int[] arr) {
-        int AverageSum = 0;
+    public int calcAverageSalesAmount(long[] arr) {
+        long averageSum = 0;
 
         for (int j = 0; j < arr.length; j++) {
-            AverageSum = AverageSum + arr[j];
+            averageSum = averageSum + arr[j];
 
         }
-        AverageSum = AverageSum / arr.length;
+        averageSum = averageSum / arr.length;
 
-        return AverageSum;
+        return (int) averageSum;
     }
 
-    public int calcMaxAverage(int[] arr) {
-        int MaxAverage = 0;
+    public int calcMaxAverage(long[] arr) {
+        int maxAverage = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] >= arr[MaxAverage]) {
-                MaxAverage = i;
+            if (arr[i] >= arr[maxAverage]) {
+                maxAverage = i;
             }
         }
 
-        return MaxAverage + 1;
+        return maxAverage + 1;
 
     }
 
-    public int calcMinAverage(int[] arr) {
-        int MinAverage = 0;
+    public int calcMinAverage(long[] arr) {
+        int minAverage = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < arr[MinAverage]) {
-                MinAverage = i;
+            if (arr[i] < arr[minAverage]) {
+                minAverage = i;
             }
         }
-        return MinAverage + 1;
+        return minAverage + 1;
     }
 
-    public int calcAverageMinMonth(int[] arr) {
-        int AverageSum = 1;
-        int MinMonth = 0;
+    public int calcAverageMinMonth(long[] arr) {
+        int averageSum = 1;
+        int minMonth = 0;
 
         for (int j = 0; j < arr.length; j++) {
-            AverageSum += arr[j];
+            averageSum += arr[j];
         }
-        AverageSum = AverageSum / arr.length;
+        averageSum = averageSum / arr.length;
 
-        for (int j : arr) {
-            if (AverageSum < j) {
-                MinMonth++;
+        for (long j : arr) {
+            if (averageSum < j) {
+                minMonth++;
             }
         }
 
-        return MinMonth;
+        return minMonth;
     }
 
-    public int calcAverageMaxMonth(int[] arr) {
-        int AverageSum = 1;
-        int MaxMonth = 0;
+    public int calcAverageMaxMonth(long[] arr) {
+        int averageSum = 1;
+        int maxMonth = 0;
 
         for (int j = 0; j < arr.length; j++) {
-            AverageSum += arr[j];
+            averageSum += arr[j];
         }
-        AverageSum = AverageSum / arr.length;
+        averageSum = averageSum / arr.length;
 
-        for (int j : arr) {
-            if (AverageSum > j) {
-                MaxMonth++;
+        for (long j : arr) {
+            if (averageSum > j) {
+                maxMonth++;
             }
         }
 
-        return MaxMonth;
+        return maxMonth;
     }
 
 }

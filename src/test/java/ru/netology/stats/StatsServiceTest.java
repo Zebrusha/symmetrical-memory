@@ -9,7 +9,7 @@ public class StatsServiceTest {
     void amountSls() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 180;
         int Actual = service.calcSumService(arg);
@@ -17,11 +17,12 @@ public class StatsServiceTest {
         Assertions.assertEquals(Expected, Actual);
     }
 
+
     @Test
     void CalcAverageSalesAmountTest() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 15;
         int Actual = service.calcAverageSalesAmount(arg);
@@ -33,7 +34,7 @@ public class StatsServiceTest {
     void CalcMaxAverageTest() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 8;
 
@@ -47,7 +48,7 @@ public class StatsServiceTest {
     void CalcMinAverageTest() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 9;
         int Actual = service.calcMinAverage(arg);
@@ -59,7 +60,7 @@ public class StatsServiceTest {
     void CalcAverageMinMonth() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
         int Actual = service.calcAverageMinMonth(arg);
@@ -71,7 +72,7 @@ public class StatsServiceTest {
     void CalcAverageMaxMonth() {
         StatsService service = new StatsService();
 
-        int[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
         int Actual = service.calcAverageMaxMonth(arg);
