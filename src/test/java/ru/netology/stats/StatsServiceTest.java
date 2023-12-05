@@ -9,10 +9,10 @@ public class StatsServiceTest {
     void amountSls() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 180;
-        int Actual = service.calcSumService(arg);
+        int Actual = service.calcSumService(arrayOfNumbers);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -22,10 +22,10 @@ public class StatsServiceTest {
     void CalcAverageSalesAmountTest() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 15;
-        int Actual = service.calcAverageSalesAmount(arg);
+        int Actual = service.calcAverageSalesAmount(arrayOfNumbers);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -34,11 +34,11 @@ public class StatsServiceTest {
     void CalcMaxAverageTest() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 8;
 
-        int Actual = service.calcMaxAverage(arg);
+        int Actual = service.calcMaxAverage(arrayOfNumbers);
 
 
         Assertions.assertEquals(Expected, Actual);
@@ -48,10 +48,10 @@ public class StatsServiceTest {
     void CalcMinAverageTest() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 9;
-        int Actual = service.calcMinAverage(arg);
+        int Actual = service.calcMinAverage(arrayOfNumbers);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -60,10 +60,10 @@ public class StatsServiceTest {
     void CalcAverageMinMonth() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
-        int Actual = service.calcAverageMinMonth(arg);
+        int Actual = service.calcAverageMinMonth(arrayOfNumbers);
 
         Assertions.assertEquals(Expected, Actual);
     }
@@ -72,10 +72,10 @@ public class StatsServiceTest {
     void CalcAverageMaxMonth() {
         StatsService service = new StatsService();
 
-        long[] arg = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] arrayOfNumbers = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expected = 5;
-        int Actual = service.calcAverageMaxMonth(arg);
+        int Actual = service.calcAverageMaxMonth(arrayOfNumbers);
 
         Assertions.assertEquals(Expected, Actual);
     }
